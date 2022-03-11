@@ -258,7 +258,8 @@
   flex-wrap: wrap;
 }
 
-.table__cell_theme_dark {
+.table__cell_theme_black {
+  margin-top: 80px;
   width: 200px;
 }
 
