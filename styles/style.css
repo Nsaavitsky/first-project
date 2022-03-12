@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
@@ -41,11 +41,14 @@
   font-weight: normal;
   z-index: 4;
   position: absolute;
+  font-size: 18px;
   left: 64px;
   bottom: 30px;
 }
 
 .logo_place_header {
+  width: 183px;
+  height: 32px;
   z-index: 3;
   position: absolute;
   top: 30px;
@@ -88,18 +91,18 @@
 
 .two-columns__brief {
   margin: 0;
+  width: 175px;
   line-height: 1.2;
-  width: 177px;
   font-size: 18px;
-  font-style: normal;
+  font-weight: normal;
+  color: #2f80ed;
 }
 
 .two-columns__paragraph {
   margin: 30px 0 0 0;
   line-height: 34px;
   font-size: 24px;
-  font-style: normal;
-  min-height: 60px;
+  font-weight: normal;
 }
 
 .two-columns__paragraph:first-of-type {
@@ -129,7 +132,7 @@
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .section-subtitle {
@@ -138,7 +141,7 @@
   width: 60%;
   line-height: 34px;
   font-size: 24px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .table {
@@ -157,14 +160,14 @@
   margin: 0 0 20px 0;
   line-height: 1.15;
   font-size: 24px;
-  font-style: normal;
+  font-weight: bold;
 }
 
 .table__text {
   margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .table__text:first-of-type {
@@ -182,6 +185,7 @@
 }
 
 .feynman__photo {
+  background-image: url("/images/feinman.png");
   z-index: 1;
   position: absolute;
   left: 0;
@@ -197,7 +201,7 @@
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .feynman__subtitle {
@@ -205,7 +209,7 @@
   margin: 0;
   line-height: 51px;
   font-size: 36px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .feynman__link {
@@ -215,7 +219,7 @@
   top: 50%;
   line-height: 51px;
   font-size: 36px;
-  font-style: normal;
+  font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
 }
@@ -233,29 +237,15 @@
 }
 
 .section-title_theme_dark {
-  text-align: center;
-  width: 60%;
-  margin: 90px 0 20px 0;
-  line-height: 1.15;
-  font-size: 60px;
-  font-style: bold;
+  margin: 0 0 20px 0;
 }
 
 .section-subtitle_theme_dark {
-  width: 60%;
-  text-align: center;
   margin: 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-style: normal;
 }
 
 .table_theme_dark {
   z-index: 2;
-  width: 1100px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .table__cell_theme_black {
@@ -265,48 +255,47 @@
 
 .table__heading_theme_dark {
   margin: 0 0 20px 0;
-  line-height: 1.15;
-  font-size: 24px;
-  font-style: bold;
 }
 
 .table__text_theme_dark {
-  margin: 0;
   line-height: 1.2;
   font-size: 18px;
-  font-style: normal;
 }
 
 .kaufman__triangle {
-  margin: 0;
+  background-size: cover;
+  background-image: url("/images/triangle.svg");
   z-index: 1;
   position: absolute;
-  right: -210px;
-  top: 0;
   width: 877px;
   height: 877px;
+  right: -210px;
+  top: 0;
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-  min-height: 350px;
-  color: rgb(255, 255, 255);
-  background-color: #1f1f1f;
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 40px;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: #1f1f1f;
 }
 
 .footer__columns {
   width: 90%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
   justify-content: space-between;
   flex-basis: 711px;
   align-items: stretch;
@@ -321,21 +310,21 @@
   margin: 18px 0 18px 0;
   line-height: 25px;
   font-size: 18px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .footer__column-heading {
   margin: 0 0 20px 0;
   line-height: 30px;
   font-size: 18px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .footer__column-links {
   margin: 0;
   line-height: 30px;
   font-size: 18px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .footer__column-links:last-of-type {
@@ -350,7 +339,7 @@
   margin: 0;
   line-height: 30px;
   font-size: 18px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .footer__link {
@@ -362,4 +351,13 @@
   margin-right: 10px;
   width: 16px;
   height: 16px;
+}
+
+.footer__mark {
+  margin: 0;
+  padding-left: 0;
+}
+
+nav ul {
+  list-style-type: none;
 }
