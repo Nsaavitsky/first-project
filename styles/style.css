@@ -16,13 +16,13 @@
   background-color: #f2f2f2;
 }
 
-.header__main-illustrator {
-  z-index: 2;
+.logo_place_header {
+  width: 183px;
+  height: 32px;
+  z-index: 3;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 765px;
-  height: 608px;
+  top: 30px;
+  left: 64px;
 }
 
 .header__title {
@@ -32,6 +32,15 @@
   margin: 0 0 0 64px;
   width: 730px;
   font-size: 102px;
+}
+
+.header__main-illustrator {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
 }
 
 .header__subtitle {
@@ -44,15 +53,6 @@
   font-size: 18px;
   left: 64px;
   bottom: 30px;
-}
-
-.logo_place_header {
-  width: 183px;
-  height: 32px;
-  z-index: 3;
-  position: absolute;
-  top: 30px;
-  left: 64px;
 }
 
 .header__square-pic {
@@ -72,7 +72,7 @@
   margin-top: 80px;
 }
 
-.link {
+.header__link {
   text-decoration: none;
   color: #2f80ed;
 }
@@ -185,7 +185,7 @@
 }
 
 .feynman__photo {
-  background-image: url("/images/feinman.png");
+  background-image: url("../images/feinman.png");
   z-index: 1;
   position: absolute;
   left: 0;
@@ -248,7 +248,7 @@
   z-index: 2;
 }
 
-.table__cell_theme_black {
+.table__cell_theme_dark {
   margin-top: 80px;
   width: 200px;
 }
@@ -264,7 +264,7 @@
 
 .kaufman__triangle {
   background-size: cover;
-  background-image: url("/images/triangle.svg");
+  background-image: url("../images/triangle.svg");
   z-index: 1;
   position: absolute;
   width: 877px;
@@ -298,7 +298,6 @@
 .footer__column_content_copyright {
   justify-content: space-between;
   flex-basis: 711px;
-  align-items: stretch;
 }
 
 .logo_place_footer {
