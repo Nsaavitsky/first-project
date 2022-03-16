@@ -344,6 +344,8 @@
 .footer__link {
   text-decoration: none;
   color: white;
+  width: 183px;
+  height: 35px;
 }
 
 .footer__social-icon {
@@ -353,10 +355,7 @@
 }
 
 .footer__mark {
+  list-style-type: none;
   margin: 0;
   padding-left: 0;
-}
-
-nav ul {
-  list-style-type: none;
 }
